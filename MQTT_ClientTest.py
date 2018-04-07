@@ -3,7 +3,9 @@ import time
 
 #outTopic = "outTopic"
 inTopic = "inTopic"
-time.sleep(5)
+sleepT = 7.5
+
+time.sleep(sleepT)
 
 broker_address="192.168.1.117"
 print("Create New Instanace")
@@ -21,19 +23,19 @@ print("Publishing message to topic",inTopic)
 while True:
     print ("RED")
     client.publish(inTopic,"Rgb")
-    time.sleep(5)
+    time.sleep(sleepT)
     print ("GREEN")
     client.publish(inTopic,"rGb")
-    time.sleep(5)
+    time.sleep(sleepT)
     print ("BLUE")
     client.publish(inTopic,"rgB")
-    time.sleep(5)
+    time.sleep(sleepT)
     print ("YELLOW")
     client.publish(inTopic,"RGb")
-    time.sleep(5)
+    time.sleep(sleepT)
     print ("TEAL")
     client.publish(inTopic,"rGB")
-    time.sleep(5)
+    time.sleep(sleepT)
     print ("VIOLET")
     client.publish(inTopic,"RgB")
-    time.sleep(5)
+    time.sleep(sleepT)
